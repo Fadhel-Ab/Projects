@@ -5,64 +5,87 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 .topcontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: -20px;
-    height: 550px;
+    min-height: 92vh;
+    flex-wrap: wrap;
     background-color: #1F2937;
-
-}
-.header{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    
-}
-ul{
-    display: flex;
-    gap: 25px;
-    margin-left: auto;
-    list-style: none;
+    width: 100%;
+   
 }
 .topsubcontainer{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
    color: white;
-    width: 73%;
-    gap: 100px;
+    width: 77%;
+    gap: 9.5vh;
     color: #F9FAF8;
+    min-height: 90vh;
 }
-.pic{
+.header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height:100% ;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.356);
-    border: 1px solid #f9faf834;
-    border-radius: 5px;
-    overflow: hidden;
-  
+    width: 100%; 
 }
 .midtop{
-display: flex;
-align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    width: 100%;
+    min-height: 50vh;
+    gap: 5vh;
+    padding-bottom: 5vh;
 }
 .leftcontainer{
-    width: 50%;
-    height: 220px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: baseline;
+    padding-top: 5%;
+    gap: 1vh;
+    font-size: 18px;
+   flex: 1 1;
+   
 }
 .rightcontainer{
-    width: 50%;
-    
-    height: 220px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    min-height: 280px;
+    height: 285px;
+    flex: 1 1;
+
 }
+ul{
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+    margin-left: auto;
+}
+
+.pic{
+   border-radius: 5px;
+   object-fit: fill;
+   width: 100%;
+   height: 100%;
+}
+
+
+
 .parat{
-    font-size: 48px;
+    font-size: clamp(48px,4vw,250px);
+    
     color: #F9FAF8;
     font-weight: 900;
     margin: 0;
@@ -82,24 +105,21 @@ button.topbut{
 .middlecontainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 500px;
-    gap: 35px;
-   
-   
+    min-height:84vh;
+    height: auto;
+    gap: 5vh;
 }
 .cardcontainer{
     display: flex;
     align-items: center;
-    justify-content: baseline;
-    gap: 50px;
-    
+    gap: 3vw;
+    flex-wrap: wrap;
 }
 .card{
     border:2px solid #1F2937;
-    height: 250px;
-    width: 170px;
+    height:43vh;
+    width:13vw;
     display: flex;
     flex-direction: column;
 }
@@ -107,7 +127,7 @@ h1{
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    margin-top: -50px;
+    padding-top: 5vh;
 }
 .quote{
     background-color: #E5E7EB;

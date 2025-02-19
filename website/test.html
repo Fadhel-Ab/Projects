@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Flex Example</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;  /* Vertical layout for the body */
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh; /* Ensure full viewport height */
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;       /* Horizontal layout inside the container */
+            flex-wrap: wrap;            /* Allow wrapping if the items don't fit */
+            width: 100%;                 /* Limit the width for better visual */
+            border: 3px solid black;   /* Border for visibility */
+            gap: 10px;                  /* Space between items */
+            background-color: lightblue;
+            padding: 10px;
+            min-height: 30vh;
+        }
+        .subcont{
+            display: flex;
+            flex-direction: row;       /* Horizontal layout inside the container */
+            flex-wrap: wrap;            /* Allow wrapping if the items don't fit */
+            min-width: 90%;                /* Limit the width for better visual */
+            border: 3px solid black;   /* Border for visibility */
+            gap: 10px;                  /* Space between items */
+            background-color: rgb(101, 240, 20);
+            padding: 10px;
+         
+        }
+        .item {
+            min-width: 200px;  /* Width of each item */
+            height: 150px;      /* Height of each item */
+            background-color: orange;
+            border: 2px solid #fff;
+            flex: 1 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="subcont">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+    </div>
+</div>
+</body>
+</html>
