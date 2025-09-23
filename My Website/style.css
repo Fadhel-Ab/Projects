@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Inconsolata;
+    font-size: 2vw;
+    background-color: #292A2B;
+    color: white;
+}
+.flex{
+    display: flex;
+}
+.rightside{
+    width: 100vw;
+    flex-direction: column;
+}
+.leftsidebar {
+    width: 3vw;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    border-right-style: solid;
+    border-color: #A6A6A6;
+    border-width: 0.5vw;
+  
+}
+.numerics{
+    margin: 0;
+   line-height: 5.7vh;
+   text-align: center;
+}
+nav{
+    display: flex; 
+    justify-content: space-between;  
+    line-height: 10px;
+    text-align: center;
+    align-items: center;
+    
+}
+.header{
+    font-weight: bold;
+    padding-left: 2vw;
+    font-size: 2vw;
+}
+.header-right{
+   
+}
+
+.resImg{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    max-width: 14vw;
+    height:auto;
+    left: 28.5vw;
+    top: 10vh;
+    border: 0.5vw solid #FFFFFF;
+    box-shadow: 0vw 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.links{
+    font-weight: 700;
+    text-align: center;
+    text-decoration-line: none;
+    color: #F22C58;
+    padding: 0 1vw 0 1vw    ;
+}
+.links:hover{
+    text-decoration: underline;
+}
+.maincontainer{
+    height: 30vh;
+    background-color:#D9D9D914 ;
+    justify-content: center;
+    text-align: center;
+    margin-top: 16vh;
+    align-items: center;
+  }
+  .maintext{
+    font-size: 9vw;
+    color: #FFB86C;
+}
+.curly    {
+    color: #F22C58;
+  }
+  .bracet{
+    font-size: 12vw;
+  }
+
+.secondary{
+    display: flex;
+    justify-content: end;
+    width: 73vw;
+    font-weight: 700;
+    font-size: 1.6vw;
+    text-align: center;
+    margin-top: -2vh;
+}
+
+.third{
+    display: flex;  
+    justify-content: center;
+    width: 70vw;;
+    font-weight: 400;
+    font-size: 4vw;
+    color: #24ECD8; 
+    height: 10vh;
+    align-items: center;
+    margin-top: 4vh;
+}
+.button{
+    padding: 2vh 2vw;
+    color:  #FFB86C;
+    font-weight: 900;
+    background-color: #F22C58;
+    font-size: 1vw;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10vh;
+    margin-left: -13vw;
+    box-shadow: 0 9px rgb(0, 0, 0);
+}
+.button:hover{
+    background-color: #fa5377;
+}
+.button:active{
+   
+    box-shadow: 0 5px rgb(0, 0, 0);
+    transform: translateY(1vh);
+}
+
+.endTag{
+    margin-top: 15vh;
+    justify-content: flex-end;
+}
+.skills {
+    background-color:#D9D9D914 ;
+    color: #F22C58;
+    column-gap: 12vw;
+    font-weight: 700;
+    font-size: 3.5vw;
+    line-height: 1px;
+    margin-top: 20vh;
+    height: 9vh;
+    align-items: center;
+    padding-left: 1vw;
+}
+.bulb{
+    width: 2vw;
+    height: auto;
+}
+.cardscontainer{
+    width: 80vw;    
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+
+}
+.card{
+    margin: auto;
+    text-align: center;
+    height: 54vh;
+}
+.card .cardheader{
+    font-weight: 700;
+    font-size: 3vw;
+    color: #24ECD8;
+}
+.card img{
+    width: 10vw;
+    height: 15vh;
+}
+.mywork{
+    background-color:#D9D9D914 ;
+    color: #0D99FF;
+    column-gap: 12vw;
+    font-weight: 700;
+    font-size: 3.5vw;
+    line-height: 1px;
+    margin-top: 20vh;
+    height: 9vh;
+    align-items: center;
+    padding-left: 1vw;
+    max-height: 80px;
+}
+.workcontainer{
+    width: 80vw;    
+    margin-top: 7vh;
+    overflow: hidden;
+    height: 60vh;
+    margin-left: 13vw;
+}
+.myworkrightside{
+    width: 40vw;
+    height: fit-content;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+.textcontainer {
+    width: 50vw;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #ffffff;
+}
+.myworkrightside p {
+    color: #F22C58;
+    font-size: 3.5vw;
+    font-weight: 700;
+    margin-top: 0;
+}
+.Contact{
+    height: 15vh;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.contactheader{
+    font-weight: bold;
+    font-size: 3vw;
+    color: #ffffff;
+    margin: 0;
+}
+
