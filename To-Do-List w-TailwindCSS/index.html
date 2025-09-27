@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js" ></script>
+    <title>Document</title>
+</head>
+<body class=" bg-emerald-950 flex flex-col items-center justify-center h-[100vh] text-black font-inter">
+<div class=" bg-zinc-300 outline-solid outline-[1.5px] outline-black w-[400px] h-[650px] rounded-sm flex flex-col items-center">
+    <h1 class="text-green-600 text-center  text-[50px] font-[500] mb-[30px] mt-[30px]">My To-Do List</h1>
+    <label class="font-[500] ml-[-180px] text-[30px] text-white" for="taskinput" > Enter a task</label>
+    <div>
+    <input class="w-[260px] h-[30px] bg-white rounded-md mb-[15px] mr-[10px] outline-solid outline-[1px] outline-black placeholder:text-center" type="text" placeholder="add a new task " id="taskinput" > 
+    <button class="bg-green-600 rounded-md px-[15px] py-[3px] hover:bg-green-500 text-white font-[500] text-[17px] " id="addbutton" onclick="addtask()">Add</button>
+    </div>
+    <div>
+        <ul id="tasklist" class="h-[390px] w-[340px] bg-white rounded-xl outline-solid outline-[1.5px] outline-black text-black text-left overflow-scroll" >
+            
+        </ul>
+    </div>
+</div>
+</body>
+</html>
