@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js" ></script>
+    <title>My Weather App</title>
+</head>
+<body class="flex flex-col items-center justify-center h-[100vh]" onload="start(); getLocation();">
+    <h1 class="text-[50px]">it needs the location allowed (might take a second)</h1>
+    <div class="bg-sky-500 w-[700px] h-[840px] relative">
+        <div id="topnav" class="w-[100%] px-[48px] py-[40px] flex justify-between mb-[49px]">
+            <div class="flex">
+            <img src="/pics/Location icon.png" alt="Location" class="">
+            <span class="px-[9px] text-[38px] text-white hover:text-amber-200 hover:underline underline-offset-4 cursor-pointer " onclick="city()" id="city">City</span>
+            </div>
+            <img src="/pics/Burger Menu.png" alt="burger menu" class="">
+        </div>
+        <div class="flex flex-col  items-center justify-center z-[2] relative">
+            <img src="/pics/sun icon.svg" alt="" class="w-[330.79px] h-[223.96px]" id="icon">
+            <p class="text-[159px] text-white relative w-fit h-[200px] mt-[-30px]  text-shadow-[0px_7px_4px_rgba(0,0,0,0.3)]" id="temp">25 </p><img src="/pics/degree icon.svg" alt="degree" class="absolute top-[210px] right-[180px]">
+            <p class="text-white text-[37px] text-center mb-[32px]" id="day"></p><p class="text-white text-[37px] text-center mb-[32px] mt-[-50px]" ><span id="daymonth"></span> <span id="month"></span></p>
+        </div>
+        <div class="h-[100px] w-[646px] mx-auto border-solid border-t-white border-t-[4px] flex  items-center  justify-between px-[57px] text-[30px] text-white">
+            <div class="flex  items-center justify-center ">
+                <img src="/pics/wind icon.svg" alt="alt" class="w-[62px] h-[48] mr-[10px]"> <span  id="wspeed">6.7</span>
+            </div>
+            <div class="flex  items-center justify-center">
+                <img src="/pics/humidity icon.svg" alt="alt" class="w-[20px] h-[33px] mr-[10px] "> <span id="humidity">60</span>%
+            </div>
+            <div class="flex  items-center justify-center ">
+                <img src="/pics/compass icon.svg" alt="alt" class="w-[40px] h-[40px] mr-[10px]"> <span id="direction">120</span>
+            </div>
+        </div>
+        <img src="/pics/big cloud.svg" alt="" class=" w-[331px] h-[295.55px] absolute right-[0] top-[300px] z-[1]">
+        <img src="/pics/bot cloud.svg" alt="" class=" w-[157.72px] h-[73.16px] left-[20px] bottom-[150px] absolute">
+        <img src="/pics/top cloud.svg" alt="" class=" w-[157.72px] h-[73.16px] right-[70px] top-[170px] absolute">
+    </div>
+    <p id="demo"></p>
+</body>
+</html>
